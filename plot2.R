@@ -1,0 +1,1 @@
+plot(Finaldt$Global_active_power~Finaldt$Datetime, type = "l", ylab="Global Active Power (kilowatts)", xlab="")
