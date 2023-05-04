@@ -8,3 +8,5 @@ dt$Date <- as.Date(dt$Date, format="%d/%m/%Y")
 Finaldt <- subset(dt, Date >= "2007-02-01" & Date <= "2007-02-02")
 datetime <- paste(as.Date(Finaldt$Date), Finaldt$Time)
 Finaldt$Datetime <- as.POSIXct(datetime)
+weekdate <- weekdays(Finaldt$Datetime)
+Finaldt$Datetime <- weekdate
